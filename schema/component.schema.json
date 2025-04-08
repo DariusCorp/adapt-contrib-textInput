@@ -13,7 +13,7 @@
       "properties": {
         "_supportedLayout": {
           "type": "string",
-          "title": "Supported layout",
+          "title": "Format acceptat",
           "default": "both",
           "enum": [
             "full-width",
@@ -26,16 +26,16 @@
         },
         "instruction": {
           "type": "string",
-          "title": "Instruction",
-          "default": "Input your answer and select Submit.",
+          "title": "Instrucțiuni",
+          "default": "Introduceți răspunsul și selectați Trimiteți.",
           "_adapt": {
             "translatable": true
           }
         },
         "ariaQuestion": {
           "type": "string",
-          "title": "ARIA Question",
-          "description": "This will be read out by screen readers instead of reading the 'Display title', 'Body' & 'Instruction' fields when focusing on the options. To be clear and concise, ensure the text encompasses only the question associated.",
+          "title": "Întrebare ARIA",
+          "description": "Aceasta va fi citită de cititoarele de ecran în loc să citească câmpurile 'Titlu de afișare', 'Conținut' și 'Instrucțiune' atunci când se concentrează pe opțiuni. Pentru a fi clar și concis, asigurați-vă că textul cuprinde doar întrebarea asociată.",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -43,13 +43,13 @@
         },
         "_items": {
           "type": "array",
-          "title": "Items",
+          "title": "Elemente",
           "items": {
             "type": "object",
             "properties": {
               "_answers": {
                 "type": "array",
-                "title": "Answers",
+                "title": "Răspunsuri",
                 "items": {
                   "type": "string"
                 }
@@ -64,7 +64,7 @@
               },
               "suffix": {
                 "type": "string",
-                "title": "Suffix",
+                "title": "Sufix",
                 "default": "",
                 "_adapt": {
                   "translatable": true
@@ -72,8 +72,8 @@
               },
               "placeholder": {
                 "type": "string",
-                "title": "Placeholder",
-                "description": "Hint or expected value of the input field",
+                "title": "Înlocuitor",
+                "description": "Indiciu sau valoare așteptată a câmpului de intrare",
                 "default": "",
                 "_adapt": {
                   "translatable": true
@@ -84,63 +84,63 @@
         },
         "_attempts": {
           "type": "number",
-          "title": "Allowed attempts",
-          "description": "How many attempts the learner is allowed",
+          "title": "Încercări permise",
+          "description": "Câte încercări sunt permise cursantului",
           "default": 1
         },
         "_canShowModelAnswer": {
           "type": "boolean",
-          "title": "Enable correct answer toggle",
-          "description": "Allow the user to view the 'model answer' if they answer the question incorrectly",
+          "title": "Activați comutarea răspunsului corect",
+          "description": "Permiteți utilizatorului să vizualizeze 'răspunsul model' dacă răspunde greșit la întrebare.",
           "default": true
         },
         "_canShowCorrectness": {
           "type": "boolean",
-          "title": "Enable correct answers to display after submit",
-          "description": "If enabled, this replaces the associated 'model answer' toggle button and a comma separated list of correct options is displayed below the submitted text input",
+          "title": "Activați afișarea răspunsurilor corecte după trimitere",
+          "description": "Dacă este activat, acesta înlocuiește butonul de comutare 'răspuns model' asociat și o listă separată prin virgulă de opțiuni corecte este afișată sub textul trimis.",
           "default": false
         },
         "_canShowFeedback": {
           "type": "boolean",
-          "title": "Enable feedback",
+          "title": "Activați feedback",
           "default": true
         },
         "_canShowMarking": {
           "type": "boolean",
-          "title": "Enable marking",
+          "title": "Activați marcarea",
           "default": true
         },
         "_shouldDisplayAttempts": {
           "type": "boolean",
-          "title": "Show number of remaining attempts",
+          "title": "Afișați numărul de încercări rămase",
           "default": false
         },
         "_isRandom": {
           "type": "boolean",
-          "title": "Randomise items",
+          "title": "Randomizarea articolelor",
           "default": false
         },
         "_recordInteraction": {
           "type": "boolean",
-          "title": "Record interaction",
-          "description": "If disabled, recording the user's answer(s) to this question to cmi.interactions on the LMS will be disabled for this component only",
+          "title": "Înregistrarea interacțiunii",
+          "description": "Dacă este dezactivată, înregistrarea răspunsurilor utilizatorului la această întrebare la cmi.interactions pe LMS va fi dezactivată numai pentru această componentă",
           "default": true
         },
         "_questionWeight": {
           "type": "number",
-          "title": "Question weight",
-          "description": "How much this question is worth",
+          "title": "Importanța întrebării",
+          "description": "Cât valorează această întrebare",
           "default": 1
         },
         "_allowsAnyCase": {
           "type": "boolean",
-          "title": "Disable case sensitivity",
-          "description": "Should the check of the user's answer(s) be case-insensitive or case-sensitive?",
+          "title": "Dezactivați sensibilitatea la majuscule și minuscule",
+          "description": "Verificarea răspunsului (răspunsurilor) utilizatorului ar trebui să fie insensibilă la majuscule sau minuscule?",
           "default": false
         },
         "_allowsPunctuation": {
           "type": "boolean",
-          "title": "Remove punctuation from user input",
+          "title": "Eliminarea punctuației din inputurile utilizatorului",
           "default": false
         },
         "_feedback": {
@@ -150,8 +150,8 @@
           "properties": {
             "title": {
               "type": "string",
-              "title": "Title",
-              "description": "Title text for the feedback",
+              "title": "Titlu",
+              "description": "Textul titlului pentru feedback",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -159,8 +159,8 @@
             },
             "altTitle": {
               "type": "string",
-              "title": "Alternative Feedback Title",
-              "description": "Text read out by screen readers if no visual title is included",
+              "title": "Titlul feedback-ului alternativ",
+              "description": "Text citit de cititoarele de ecran dacă nu este inclus niciun titlu vizual",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -168,8 +168,8 @@
             },
             "correct": {
               "type": "string",
-              "title": "Correct feedback",
-              "description": "Correct answer feedback for this question",
+              "title": "Feedback corect",
+              "description": "Răspuns corect la această întrebare",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -178,13 +178,13 @@
             },
             "_incorrect": {
               "type": "object",
-              "title": "Incorrect",
+              "title": "Incorect",
               "default": {},
               "properties": {
                 "final": {
                   "type": "string",
-                  "title": "Default incorrect feedback",
-                  "description": "Incorrect answer feedback for the final attempt",
+                  "title": "Feedback incorect implicit",
+                  "description": "Feedback de răspuns incorect pentru încercarea finală",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -193,8 +193,8 @@
                 },
                 "notFinal": {
                   "type": "string",
-                  "title": "Retry feedback",
-                  "description": "Incorrect answer feedback for any attempt apart from the last attempt. If you leave this blank, the default incorrect feedback will be used instead",
+                  "title": "Feedback de reîncercare",
+                  "description": "Feedback de răspuns incorect pentru orice încercare în afară de ultima încercare. Dacă lăsați acest lucru necompletat, va fi folosit în schimb feedback-ul incorect implicit",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -205,13 +205,13 @@
             },
             "_partlyCorrect": {
               "type": "object",
-              "title": "Partly correct",
+              "title": "Parțial corect",  
               "default": {},
               "properties": {
                 "final": {
                   "type": "string",
-                  "title": "Default partly correct feedback",
-                  "description": "Partly correct answer feedback for the final attempt. If you leave this blank, the default incorrect feedback will be used instead",
+                  "title": "Feedback parțial corect implicit",
+                  "description": "Feedback de răspuns parțial corect pentru încercarea finală. Dacă lăsați acest lucru necompletat, va fi folosit în schimb feedback-ul incorect implicit",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -220,8 +220,8 @@
                 },
                 "notFinal": {
                   "type": "string",
-                  "title": "Retry feedback",
-                  "description": "Partly correct answer feedback for any attempt apart from the last attempt. If you leave this blank, the default partly correct feedback will be used instead",
+                  "title": "Feedback de reîncercare",
+                  "description": "Feedback de răspuns parțial corect pentru orice încercare în afară de ultima încercare. Dacă lăsați acest lucru necompletat, va fi folosit în schimb feedback-ul parțial corect implicit",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -234,17 +234,17 @@
         },
         "_buttons": {
           "type": "object",
-          "title": "Button overrides",
+          "title": "Înlocuiește butoanele",
           "default": {},
           "properties": {
             "_submit": {
               "type": "object",
-              "title": "Submit",
+              "title": "Trimiteți",
               "default": {},
               "properties": {
                 "buttonText": {
                   "type": "string",
-                  "title": "Button text",
+                  "title": "Text buton",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -252,7 +252,7 @@
                 },
                 "ariaLabel": {
                   "type": "string",
-                  "title": "ARIA label",
+                  "title": "Etichetă ARIA", 
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -267,7 +267,7 @@
               "properties": {
                 "buttonText": {
                   "type": "string",
-                  "title": "Button text",
+                  "title": "Text buton",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -275,7 +275,7 @@
                 },
                 "ariaLabel": {
                   "type": "string",
-                  "title": "ARIA label",
+                  "title": "Etichetă ARIA",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -285,12 +285,12 @@
             },
             "_showCorrectAnswer": {
               "type": "object",
-              "title": "Show correct answer",
+              "title": "Afișați răspunsul corect",  
               "default": {},
               "properties": {
                 "buttonText": {
                   "type": "string",
-                  "title": "Button text",
+                  "title": "Text buton",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -298,7 +298,7 @@
                 },
                 "ariaLabel": {
                   "type": "string",
-                  "title": "ARIA label",
+                  "title": "Etichetă ARIA",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -308,12 +308,12 @@
             },
             "_hideCorrectAnswer": {
               "type": "object",
-              "title": "Hide correct answer",
+              "title": "Ascundeți răspunsul corect",  
               "default": {},
               "properties": {
                 "buttonText": {
                   "type": "string",
-                  "title": "Button text",
+                  "title": "Text buton",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -321,7 +321,7 @@
                 },
                 "ariaLabel": {
                   "type": "string",
-                  "title": "ARIA label",
+                  "title": "Etichetă ARIA",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -331,12 +331,12 @@
             },
             "_showFeedback": {
               "type": "object",
-              "title": "Show feedback",
+              "title": "Afișați feedback",
               "default": {},
               "properties": {
                 "buttonText": {
                   "type": "string",
-                  "title": "Button text",
+                  "title": "Text buton",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -344,7 +344,7 @@
                 },
                 "ariaLabel": {
                   "type": "string",
-                  "title": "ARIA label",
+                  "title": "Etichetă ARIA",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -354,7 +354,7 @@
             },
             "remainingAttemptsText": {
               "type": "string",
-              "title": "Remaining attempts label",
+              "title": "Eticheta de încercări rămase",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -362,7 +362,7 @@
             },
             "remainingAttemptText": {
               "type": "string",
-              "title": "Final attempt label",
+              "title": "Etichetă de încercare finală",
               "default": "",
               "_adapt": {
                 "translatable": true

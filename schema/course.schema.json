@@ -18,31 +18,31 @@
               "properties": {
                 "_textinput": {
                   "type": "object",
-                  "title": "Text Input",
+                  "title": "Introducere text",
                   "default": {},
                   "properties": {
                     "ariaRegion": {
                       "type": "string",
-                      "title": "ARIA region",
-                      "default": "Text input. Type your answer and then submit.",
+                      "title": "Zonă ARIA", 
+                      "default": "Introducerea textului. Tastați răspunsul și apoi trimiteți-l.",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "correctAnswerPrefix": {
                       "type": "string",
-                      "title": "ARIA prefix for correct answer",
-                      "description": "If _canShowCorrectness is enabled, this text provides a prefix for the correct option displayed below the submitted input",
-                      "default": "The correct answer is",
+                      "title": "Prefixul ARIA pentru răspunsul corect",
+                      "description": "Dacă _canShowCorrectness este activat, acest text oferă un prefix pentru opțiunea corectă afișată sub intrarea trimisă",
+                      "default": "Răspunsul corect este",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "correctAnswersPrefix": {
                       "type": "string",
-                      "title": "ARIA prefix for correct answers",
-                      "description": "If _canShowCorrectness is enabled, this text provides a prefix for the comma separated list of correct options displayed below the submitted input",
-                      "default": "Accepted correct answers include",
+                      "title": "Prefixul ARIA pentru răspunsurile corecte",
+                      "description": "Dacă _canShowCorrectness este activată, acest text oferă un prefix pentru lista de opțiuni corecte separate prin virgulă afișată sub intrarea trimisă",
+                      "default": "Răspunsurile corecte acceptate includ",
                       "_adapt": {
                         "translatable": true
                       }

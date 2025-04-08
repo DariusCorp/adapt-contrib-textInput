@@ -7,10 +7,10 @@
         "_component": "textinput",
         "_classes": "",
         "_layout": "full",
-        "title": "Title of our text input component",
-        "displayTitle": "Title of our text input component",
-        "body": "If A is 1% and Z is 26%, what are B, C and D?",
-        "instruction": "Input your answer and select Submit.",
+        "title": "Titlul componentei noastre de introducere a textului",
+        "displayTitle": "Titlul componentei noastre de introducere a textului",
+        "body": "Dacă A este 1% și Z este 26%, cît sunt B, C și D?",
+        "instruction": "Introduceți răspunsul și selectați Trimiteți.",
         "ariaQuestion": "",
         "_attempts": 1,
         "_shouldDisplayAttempts": false,
@@ -27,68 +27,68 @@
             {
                 "_answers": [
                     "2",
-                    "two"
+                    "doi"
                 ],
                 "prefix": "B:",
                 "suffix": "%",
-                "placeholder": "Enter answer here"
+                "placeholder": "Introduceți răspunsul aici"
             },
             {
                 "_answers": [
                     "3",
-                    "three"
+                    "trei"
                 ],
                 "prefix": "C:",
                 "suffix": "%",
-                "placeholder": "Enter answer here"
+                "placeholder": "Introduceți răspunsul aici"
             },
             {
                 "_answers": [
                     "4",
-                    "four"
+                    "patru"
                 ],
                 "prefix": "D:",
                 "suffix": "%",
-                "placeholder": "Enter answer here"
+                "placeholder": "Introduceți răspunsul aici"
             }
         ],
         "_feedback": {
             "title": "Feedback",
-            "altTitle": "Alt feedback title text",
-            "correct": "This feedback will appear if you answered the question correctly.",
+            "altTitle": "Textul titlului feedbackului alternativ",
+            "correct": "Acest feedback va apărea dacă ați răspuns corect la întrebare.",
             "_incorrect": {
                 "notFinal": "",
-                "final": "This feedback will appear if you answered the question incorrectly."
+                "final": "Acest feedback va apărea dacă ați răspuns incorect la întrebare."
             },
             "_partlyCorrect": {
                 "notFinal": "",
-                "final": "This feedback will appear if you answered part of the question correctly."
+                "final": "Acest feedback va apărea dacă ați răspuns corect la o parte a întrebării."
             }
         },
-        "_comment": "You only need to include _buttons if you want to override the button labels that are set in course.json",
+        "_comment": "Trebuie să includeți _buttons numai dacă doriți să înlocuiți etichetele butoanelor setate în course.json",
         "_buttons": {
             "_submit": {
-                "buttonText": "Submit",
-                "ariaLabel": "Select here to submit your answer."
+                "buttonText": "Trimiteți",
+                "ariaLabel": "Selectați aici pentru a trimite răspunsul."
             },
             "_reset": {
                 "buttonText": "Reset",
                 "ariaLabel": ""
             },
             "_showCorrectAnswer": {
-                "buttonText": "Correct Answer",
+                "buttonText": "Răspuns corect",
                 "ariaLabel": ""
             },
             "_hideCorrectAnswer": {
-                "buttonText": "My Answer",
+                "buttonText": "Răspunsul meu",
                 "ariaLabel": ""
             },
             "_showFeedback": {
-                "buttonText": "Show feedback",
+                "buttonText": "Afișează feedback",
                 "ariaLabel": ""
             },
-            "remainingAttemptsText": "attempts remaining",
-            "remainingAttemptText": "final attempt"
+            "remainingAttemptsText": "încercări rămase",
+            "remainingAttemptText": "încercare finală"
         },
         "_pageLevelProgress": {
             "_isEnabled": true

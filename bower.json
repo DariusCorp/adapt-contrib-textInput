@@ -6,8 +6,8 @@
   "bugs": "https://github.com/adaptlearning/adapt-contrib-textInput/issues",
   "component": "textinput",
   "targetAttribute": "_textinput",
-  "displayName": "Text Input",
-  "description": "A question component that allows the learner to input text based upon a question stem.",
+  "displayName": "Introducere text",
+  "description": "O componentă care permite cursantului să introducă text pe baza unei întrebări.",
   "main": "/js/adapt-contrib-textInput.js",
   "keywords": [
     "adapt-plugin",
